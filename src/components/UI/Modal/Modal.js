@@ -7,7 +7,10 @@ import Backdrop from '../Backdrop/Backdrop';
 class Modal extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
-    return nextProps.show !== this.props.show;
+    // return true or false
+    return nextProps.show !== this.props.show 
+      || nextProps.children !== this.props.children;
+      // 第二个条件，为了让 spinner 能够显示
   }
 
   componentWillUpdate() {
