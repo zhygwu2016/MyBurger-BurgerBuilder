@@ -7,4 +7,5 @@
 5. npm install --save redux
 6. npm install --save react-redux
 7. npm install --save redux-thunk
+8. npm install --save enzyme react-test-renderer enzyme-adapter-react-16
 */
